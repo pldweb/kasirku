@@ -5,24 +5,6 @@
   --desc-text-color: #333434;
 }
 
-/* ::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: rgb(15, 15, 59);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color);
-  width: 5px;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-} */
-
 html,
 body {
   font-family: "Poppins", sans-serif;
@@ -1747,7 +1729,26 @@ footer {
 }
 }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+
+
+  
+  .guarantee-image img {
+    width: 100%;
+    transform: scale(1.5);
+    left: -20%;
+    position: relative;
+ }
+}
+
 @media (min-width: 1200px){
+
+
+  
+
+  .guarantee-content {
+    max-width: 600px;
+  }
 
   .container {
     width: 1170px;
@@ -1777,6 +1778,23 @@ footer {
 
 
 @media screen and (max-width: 1200px) {
+
+  .sticky .collapse .navbar-nav li a, .sticky .collapse .navbar-nav li a:hover {
+    color: white;
+}
+
+  .navbar .logo {
+    margin: -4px 0 0 !important;
+}
+
+  .sticky .navbar-toggle span.icon-bar {
+    background-color: var(--title-text-color) !important;
+}
+
+.sticky .navbar-toggle {
+   border-color: var(--title-text-color) !important;
+
+}
 
 
   #how-section .row.d-flex {
@@ -2115,8 +2133,9 @@ footer {
   .guarantee-content {
     float: none;
     left: 0;
-    width: 100%;
     text-align: center;
+    padding: 0;
+    width: 85%;
   }
 
 
@@ -2132,9 +2151,9 @@ footer {
     position: relative;
     order: 1;
     width: 100%;
-    bottom: -232px;
+    bottom: 0;
     margin: 0 auto;
-    margin-top: -190px;
+    /* margin-top: -190px; */
   }
  
   
@@ -2227,6 +2246,7 @@ footer {
 
   .guarantee-content {
     padding: 0 20px;
+    width: 100%;
   }
 
   .promotion-content{
@@ -2255,8 +2275,7 @@ footer {
 
    .guarantee-image {
   
-    bottom: -46vw;
-    margin-top: -37vw;
+    
    }
 
    .row.testimonials-content.d-flex {
@@ -2381,6 +2400,7 @@ button.btn.btn-info.btn-lg.custom-modal {
    .benefit-content {
      margin-top: 1rem;
    }
+  
 }
 
 
@@ -2407,7 +2427,7 @@ button.btn.btn-info.btn-lg.custom-modal {
 }
 
   .guarantee-image img {
-    width: 90%;
+    width: 100%;
   }
 
 .benefit-content {
