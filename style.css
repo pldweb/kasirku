@@ -1543,6 +1543,10 @@ a.card-link[aria-expanded="true"]:focus {
   max-width: 600px;
 }
 
+.conclusion-image-container {
+  max-width: 800px;
+}
+
 .conclusion .d-flex {
   justify-content: center;
   align-items: center;
