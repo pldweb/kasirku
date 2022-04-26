@@ -1539,6 +1539,10 @@ a.card-link[aria-expanded="true"]:focus {
   background-size: cover;
 }
 
+.conclusion-container {
+  max-width: 600px;
+}
+
 .conclusion .d-flex {
   justify-content: center;
   align-items: center;
