@@ -1791,6 +1791,14 @@ footer {
     color: white;
 }
 
+.sticky .collapse.in .navbar-nav li a, .sticky .collapse.in .navbar-nav li a:hover {
+  color: var(--title-text-color);
+}
+
+.sticky .collapse.in .navbar-nav li a.btn, .sticky .collapse.in .navbar-nav li a.btn:hover {
+  color: white;
+}
+
   .navbar .logo {
     margin: -4px 0 0 !important;
 }
