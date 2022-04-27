@@ -1300,7 +1300,7 @@ custom-guarantee:before {
 }
 
 #faq-content {
-  width: 80%;
+  width: 100%;
   display: block;
   margin: 0 auto;
 }
@@ -1309,7 +1309,7 @@ custom-guarantee:before {
   background-color: #e6ebf2;
   overflow: hidden;
   border-radius: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   -webkit-transition: 1s ease;
   transition: 1s ease;
   -webkit-border-radius: 8px;
@@ -1341,7 +1341,7 @@ custom-guarantee:before {
   -moz-transition: all 500ms linear;
   -ms-transition: all 500ms linear;
   -o-transition: all 500ms linear;
-  background-color: #EAE5F7;
+  background-color: #f5f5f5;
 }
 
 .card-link:hover {
@@ -1396,7 +1396,7 @@ a.card-link[aria-expanded="true"]:focus {
   color: var(--desc-text-color);
   padding: 20px;
   line-height: 1.7;
-  background-color: #f1edfd;
+  background-color: #f5f5f5;
 }
 
 .hide-class {
@@ -1862,8 +1862,8 @@ footer {
   
   #faq-content {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    /* padding-right: 15px;
+    padding-left: 15px; */
   }
   div.testimonials-content {
     justify-content: space-between;
