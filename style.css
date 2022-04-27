@@ -197,6 +197,22 @@ a.btn:hover:before {
 
 /* Header Section */
 
+a.menu::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  transition: .4s ease;
+  bottom: 0;
+  background: var(--primary-color);
+}
+
+a.menu:hover::after {
+  width: 60%;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -1890,9 +1906,6 @@ footer {
     background-position: -300px center;
   }
 
-  .guarantee-image img {
-    /* width: 75%; */
-}
 
  #prices.d-flex {
    align-items: inherit;
@@ -2287,11 +2300,6 @@ footer {
 
   .footer-content {
     margin-top: 20px;
-   }
-
-   .guarantee-image {
-  
-    
    }
 
    .row.testimonials-content.d-flex {
