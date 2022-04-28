@@ -1679,7 +1679,7 @@ footer {
 }
 
 .app {
-  margin-top: 15px;
+  margin-top: 38px;
 }
 
 .app img {
@@ -2365,6 +2365,10 @@ footer {
    .feature-content {
      padding: 20px;
      border: 1px solid #e1e1e1;
+   }
+
+   .modal-body > div:not(:first-child){
+     display: none;
    }
 
    .parallax-benefit > img {

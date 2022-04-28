@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    
+
     <!-- slick -->
     <link
       rel="stylesheet"
@@ -59,9 +59,6 @@
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="style.css" />
-
-
-
   </head>
   <body>
     <nav class="navbar navbar-default custom-navbar">
@@ -408,10 +405,9 @@
         <ul class="nav nav-tabs custom-pills" aria-labelledby="pills">
           <li class="col-md-3 col-sm-3 col-xs-6 feature-item active">
             <div class="tab-link">
-              
               <a
                 data-toggle="tab"
-                onclick=""
+                onclick="displayInformasiFiturMC(this)"
                 href="#feature-1"
                 class="feature-content"
               >
@@ -428,10 +424,9 @@
 
           <li class="col-md-3 col-sm-3 col-xs-6 feature-item">
             <div class="tab-link">
-             
               <a
                 data-toggle="tab"
-                onclick=""
+                onclick="displayInformasiFiturMC(this)"
                 href="#feature-2"
                 class="feature-content"
               >
@@ -448,10 +443,9 @@
 
           <li class="col-md-3 col-sm-3 col-xs-6 feature-item">
             <div class="tab-link">
-            
               <a
                 data-toggle="tab"
-                onclick=""
+                onclick="displayInformasiFiturMC(this)"
                 href="#feature-3"
                 class="feature-content"
               >
@@ -468,10 +462,9 @@
 
           <li class="col-md-3 col-sm-3 col-xs-6 feature-item">
             <div class="tab-link">
-             
               <a
                 data-toggle="tab"
-                onclick=""
+                onclick="displayInformasiFiturMC(this)"
                 href="#feature-4"
                 class="feature-content"
               >
@@ -488,10 +481,9 @@
 
           <li class="col-md-3 col-sm-3 col-xs-6 feature-item">
             <div class="tab-link">
-            
               <a
                 data-toggle="tab"
-                onclick=""
+                onclick="displayInformasiFiturMC(this)"
                 href="#feature-5"
                 class="feature-content"
                 class="feature-content"
@@ -509,10 +501,9 @@
 
           <li class="col-md-3 col-sm-3 col-xs-6 feature-item">
             <div class="tab-link">
-            
               <a
                 data-toggle="tab"
-                onclick=""
+                onclick="displayInformasiFiturMC(this)"
                 href="#feature-6"
                 class="feature-content"
               >
@@ -529,10 +520,9 @@
 
           <li class="col-md-3 col-sm-3 col-xs-6 feature-item">
             <div class="tab-link">
-             
               <a
                 data-toggle="tab"
-                onclick=""
+                onclick="displayInformasiFiturMC(this)"
                 href="#feature-7"
                 class="feature-content"
               >
@@ -549,10 +539,9 @@
 
           <li class="col-md-3 col-sm-3 col-xs-6 feature-item">
             <div class="tab-link">
-             
               <a
                 data-toggle="tab"
-                onclick=""
+                onclick="displayInformasiFiturMC(this)"
                 href="#feature-8"
                 class="feature-content"
               >
@@ -597,7 +586,6 @@
               </div>
             </div>
           </div>
-
           <div id="feature-2" class="tab-pane fade">
             <div class="row d-flex benefit-container left">
               <div class="col-lg-6 col-sm-12">
@@ -622,7 +610,6 @@
               </div>
             </div>
           </div>
-
           <div id="feature-3" class="tab-pane fade">
             <div class="row d-flex benefit-container right">
               <div class="col-lg-6 col-sm-12">
@@ -647,7 +634,6 @@
               </div>
             </div>
           </div>
-
           <div id="feature-4" class="tab-pane fade">
             <div class="row d-flex benefit-container left">
               <div class="col-lg-6 col-sm-12">
@@ -756,7 +742,49 @@
         </div>
 
         <!-- Modal -->
+        <div class="modal fade in" id="modal-target" role="dialog" style="">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+              <div class="modal-body">
 
+              </div>
+               
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            
+          </div>
+        </div>
+        <script type="text/javascript">
+        
+
+          function displayInformasiFiturMC(t) {
+           
+          //  var link = $(t).attr('href');
+          //  var newRow = $("#feature-1").clone();
+ 
+          //  $("#modal-target .modal-body").html(link);
+
+          //   $("#modal-target").modal(); \
+
+
+          var newRow = $(this).siblings('.feature-content').clone();
+    $('#modal-target .modal-body').html(newRow);
+    $('#modal-target').modal();
+
+
+           
+          }
+         
+
+
+         
+        </script>
       </div>
     </section>
 
@@ -768,8 +796,10 @@
               Dapatkan Harga Terbaik Untuk Usaha Anda
             </h2>
             <p class="price-desc">
-              Kasirku menawarkan layanan dengan sistem berlangganan secara lengkap dengan semua fitur unggulannya. 
-              Kasirku memberikan Anda pilihan paket untuk memilih layanan yang paling sesuai untuk mengelola berbagai kebutuhan usaha Anda.
+              Kasirku menawarkan layanan dengan sistem berlangganan secara
+              lengkap dengan semua fitur unggulannya. Kasirku memberikan Anda
+              pilihan paket untuk memilih layanan yang paling sesuai untuk
+              mengelola berbagai kebutuhan usaha Anda.
             </p>
           </div>
           <!-- <div class="search-domain">
@@ -802,7 +832,7 @@
             </form>
           </div> -->
           <div id="prices" class="d-flex">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
               <div class="list-price">
                 <div class="header-price">
                   <h4>Starter</h4>
@@ -843,7 +873,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
               <div class="list-price paket-favorit">
                 <div class="header-price">
                   <h4>Advance</h4>
@@ -884,7 +914,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
               <div class="list-price">
                 <div class="header-price">
                   <h4>Enterprise</h4>
@@ -925,34 +955,43 @@
                 </div>
               </div>
             </div>
-          
+
             <div class="col-sm-6 col-xs-12">
               <div class="other-komponen-harga favorit">
                 <div class="okh-title">PAKET GRATIS</div>
                 <div class="okh-description">
-                  Kelola usaha Anda lebih mudah, cepat, dan efektif dengan layanan gratis dari Kasirku yang dapat Anda gunakan selama 14 hari.
+                  Kelola usaha Anda lebih mudah, cepat, dan efektif dengan
+                  layanan gratis dari Kasirku yang dapat Anda gunakan selama 14
+                  hari.
                 </div>
                 <ul class="mb10 list-okh">
                   <li>
-                    <img src="./assets/checklist-1.svg" alt="" />Kasir Online (Point of Sales)
+                    <img src="./assets/checklist-1.svg" alt="" />Kasir Online
+                    (Point of Sales)
                   </li>
                   <li>
-                    <img src="./assets/checklist-1.svg" alt="" />Berbagai Metode Pembayaran
+                    <img src="./assets/checklist-1.svg" alt="" />Berbagai Metode
+                    Pembayaran
                   </li>
                   <li>
-                    <img src="./assets/checklist-1.svg" alt="" /> Manajemen Tagihan
+                    <img src="./assets/checklist-1.svg" alt="" /> Manajemen
+                    Tagihan
                   </li>
                   <li>
-                    <img src="./assets/checklist-1.svg" alt="" /> Integrasi Perangkat
+                    <img src="./assets/checklist-1.svg" alt="" /> Integrasi
+                    Perangkat
                   </li>
                   <li>
-                    <img src="./assets/checklist-1.svg" alt="" /> Laporan Transaksi Lengkap
+                    <img src="./assets/checklist-1.svg" alt="" /> Laporan
+                    Transaksi Lengkap
                   </li>
                   <li>
-                    <img src="./assets/checklist-1.svg" alt="" />Manajemen Keuangan
+                    <img src="./assets/checklist-1.svg" alt="" />Manajemen
+                    Keuangan
                   </li>
                   <li>
-                    <img src="./assets/checklist-1.svg" alt="" />Manajemen Inventory
+                    <img src="./assets/checklist-1.svg" alt="" />Manajemen
+                    Inventory
                   </li>
                   <li>
                     <img src="./assets/checklist-1.svg" alt="" />Sistem CRM
@@ -967,7 +1006,8 @@
               <div class="other-komponen-harga">
                 <div class="okh-title">Perangkat Tambahan</div>
                 <div class="okh-description">
-                  Maksimalkan penjualan Anda dengan berbagai perangkat pendukung sistem Kasirku
+                  Maksimalkan penjualan Anda dengan berbagai perangkat pendukung
+                  sistem Kasirku
                 </div>
                 <div class="list-perangkat-tambahan">
                   <img src="./assets/tab.png" alt="" />
@@ -1024,11 +1064,14 @@
           <div class="guarantee-content">
             <h2 class="guarantee-title">Garansi Kualitas & Layanan 100%</h2>
             <p class="guarantee-desc">
-              Kami memberikan garansi seumur hidup (lifetime) untuk perbaikan sistem apabila terjadi kesalahan (error atau bug) dari sisi sistem Kasirku. 
-
+              Kami memberikan garansi seumur hidup (lifetime) untuk perbaikan
+              sistem apabila terjadi kesalahan (error atau bug) dari sisi sistem
+              Kasirku.
             </p>
             <p class="guarantee-desc">
-              Garansi 100% uang kembali juga akan kami berikan apabila terjadi kebocoran atau penyalahgunaan data dari sistem yang Anda gunakan. Karena bagi kami, privasi dan keamanan data adalah nomor satu.
+              Garansi 100% uang kembali juga akan kami berikan apabila terjadi
+              kebocoran atau penyalahgunaan data dari sistem yang Anda gunakan.
+              Karena bagi kami, privasi dan keamanan data adalah nomor satu.
             </p>
           </div>
         </div>
@@ -1673,8 +1716,10 @@
               /></a>
             </div>
             <div class="app">
-              <a href="https://play.google.com/store/apps/details?id=id.mycommerce.mcpos">
-                <img src="./assets/playstore.png" alt="">
+              <a
+                href="https://play.google.com/store/apps/details?id=id.mycommerce.mcpos"
+              >
+                <img src="./assets/playstore.png" alt="" />
               </a>
             </div>
           </div>
@@ -1779,9 +1824,5 @@
 
     <!-- Scrpt main js -->
     <script src="main.js"></script>
-
-
   </body>
-
-  
 </html>

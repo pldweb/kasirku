@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".button1").click(function(){
+        $("span").remove();
+    });
+   
+     $(".button2").click(function(){
+         $('span').slice(1).remove();
+     });
+     
+  });
+</script>
+</head>
+<body>
+<button class="button2">Hide all, except first element</button>
+<button class="button1">Hide all the elements</button>
+
+<span>
+<p>This is demo text.</p>
+<p>This is demo text.</p>
+</span>
+<span>
+<p>This is demo text.</p>
+<p>This is demo text.</p>
+</span>
+<span>
+<p>This is demo text.</p>
+<p>This is demo text.</p>
+</span>
+
+</body>
+</html>
