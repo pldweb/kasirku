@@ -1098,7 +1098,7 @@ a.btn.btn-purple.button {
   color: var(--title-text-color);
   display: inline-block;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   /* border-bottom: 1px solid #ddd; */
   padding-bottom: 15px;
 }
