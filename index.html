@@ -407,7 +407,7 @@
             <div class="tab-link">
               <a
                 data-toggle="tab"
-                onclick="displayInformasiFiturMC(this)"
+                onclick="FiturMC(this)"
                 href="#feature-1"
                 class="feature-content"
               >
@@ -426,7 +426,7 @@
             <div class="tab-link">
               <a
                 data-toggle="tab"
-                onclick="displayInformasiFiturMC(this)"
+                onclick="FiturMC(this)"
                 href="#feature-2"
                 class="feature-content"
               >
@@ -445,7 +445,7 @@
             <div class="tab-link">
               <a
                 data-toggle="tab"
-                onclick="displayInformasiFiturMC(this)"
+                onclick="FiturMC(this)"
                 href="#feature-3"
                 class="feature-content"
               >
@@ -464,7 +464,7 @@
             <div class="tab-link">
               <a
                 data-toggle="tab"
-                onclick="displayInformasiFiturMC(this)"
+                onclick="FiturMC(this)"
                 href="#feature-4"
                 class="feature-content"
               >
@@ -483,7 +483,7 @@
             <div class="tab-link">
               <a
                 data-toggle="tab"
-                onclick="displayInformasiFiturMC(this)"
+                onclick="FiturMC(this)"
                 href="#feature-5"
                 class="feature-content"
                 class="feature-content"
@@ -503,7 +503,7 @@
             <div class="tab-link">
               <a
                 data-toggle="tab"
-                onclick="displayInformasiFiturMC(this)"
+                onclick="FiturMC(this)"
                 href="#feature-6"
                 class="feature-content"
               >
@@ -522,7 +522,7 @@
             <div class="tab-link">
               <a
                 data-toggle="tab"
-                onclick="displayInformasiFiturMC(this)"
+                onclick="FiturMC(this)"
                 href="#feature-7"
                 class="feature-content"
               >
@@ -541,7 +541,7 @@
             <div class="tab-link">
               <a
                 data-toggle="tab"
-                onclick="displayInformasiFiturMC(this)"
+                onclick="FiturMC(this)"
                 href="#feature-8"
                 class="feature-content"
               >
@@ -763,29 +763,20 @@
         <script type="text/javascript">
         
 
-          function displayInformasiFiturMC(t) {
+          function FiturMC(t) {
            
-          //  var link = $(t).attr('href');
-          //  var newRow = $("#feature-1").clone();
- 
-          //  $("#modal-target .modal-body").html(link);
+            // $('body').find('.tab-content .tab-pane.active').addClass('get');
 
-          //   $("#modal-target").modal(); \
+          var newRow = $(t).clone();
 
+          $('#modal-target .modal-body').html(newRow);
 
-          var newRow = $(this).siblings('.feature-content').clone();
-    $('#modal-target .modal-body').html(newRow);
-    $('#modal-target').modal();
-
-
+          $('#modal-target').modal();
            
           }
          
-
-
-         
         </script>
-      </div>
+        </div>
     </section>
 
     <section id="price-section" class="price custom-price">
