@@ -2125,6 +2125,11 @@ footer {
 }
 
 @media (min-width: 769px) {
+
+  body .modal, .modal-backdrop {
+    display: none !important;
+  }
+
   button.btn.btn-info.btn-lg.custom-modal {
     display: none !important;
    }
